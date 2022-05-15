@@ -1,0 +1,108 @@
+{% extends 'Homepage/base.html' %}
+{% block content %}
+
+<style>
+  @media (max-width: 767px) {
+    .razor-col {
+      position: relative;
+      margin-top: 13%
+    }
+
+    .razor-card {
+      padding: 40px;
+      padding-bottom: 90px;
+      box-shadow: 2px 2px 8px 2px white,
+        -2px -2px 8px 2px white;
+      border-radius: 20px;
+      background: rgb(19, 24, 154);
+      background: linear-gradient(126deg, rgba(19, 24, 154, 0.8995973389355743) 0%, rgba(29, 79, 253, 0.9724264705882353) 50%, rgba(69, 149, 252, 0.8799894957983193) 100%);
+    }
+
+    .razor-h1 {
+      letter-spacing: 5px;
+
+      font-weight: 500;
+      font-size: 45px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    label {
+      font-size: 20px;
+      margin-top: 5%;
+    }
+
+
+  }
+
+  @media (min-width: 768px) {
+    .razor-col {
+      position: relative;
+      margin-top: 2%
+    }
+
+    .razor-card {
+      padding: 40px;
+      box-shadow: 2px 2px 8px 2px white,
+        -2px -2px 8px 2px white;
+      border-radius: 20px;
+      background: rgb(19, 24, 154);
+      background: linear-gradient(126deg, rgba(19, 24, 154, 0.8995973389355743) 0%, rgba(29, 79, 253, 0.9724264705882353) 50%, rgba(69, 149, 252, 0.8799894957983193) 100%);
+    }
+
+    .razor-h1 {
+      letter-spacing: 10px;
+      font-weight: 500;
+      font-size: 50px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    label {
+      font-size: 20px;
+      margin-top: 5%;
+    }
+
+
+  }
+</style>
+
+
+<div class="row justify-content-center text-light">
+  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-xs-10 razor-col">
+    <div class=" card razor-card">
+
+      <form action="{% url 'payment' %}" method='POST'>
+        {% csrf_token %}
+
+        <div style="position: relative;margin-bottom:15% ;" class="row text-center">
+          <div class="col-12">
+
+            <h1 class="razor-h1">
+              PAYMENT</h1>
+
+          </div>
+        </div>
+
+
+
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Your Name</label>
+          <input type="name" name="name" class="form-control text-center" id="formGroupExampleInput"
+            placeholder="Enter your name" required>
+        </div>
+        <div class="my-4">
+          <label for="formGroupExampleInput2" class="form-label">Amount</label>
+          <input type="number" name="amount" class="form-control text-center" id="formGroupExampleInput2"
+            placeholder="&#8377; 1   -   &#8377; 1000" min="1" max="1000" required>
+        </div><br><br>
+
+        <div class="col-12 text-center">
+          <button type="submit" class="btn form-control bg-light  btn-outline-primary mt-3">Pay Now</button>
+        </div>
+
+
+      </form>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

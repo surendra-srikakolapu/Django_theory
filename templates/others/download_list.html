@@ -1,0 +1,10 @@
+{% extends 'Homepage/base.html' %}
+{% block content %}
+
+{% for file in files %}
+
+<h1>{{file.file_name}}</h1>
+<a href="{{file.file_upload.url}}" download="{{file.file_upload.url}}">Download</a>
+
+{% endfor %}
+{% endblock %}

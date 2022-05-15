@@ -1,0 +1,27 @@
+{% for message in messages %}
+<script>
+    swal("{{message}}", " ", "{{message.tags}}");
+</script>
+{% endfor %}
+
+{% for error in form.username.errors %}
+<script>
+    alertify.set('notifier', 'position', 'top-right');
+    alertify.error("{{error}}");
+</script>
+{% endfor %}
+
+{% for error in form.email.errors %}
+<script>
+    alertify.set('notifier', 'position', 'top-right');
+    alertify.error("{{error}}");
+</script>
+{% endfor %}
+
+
+{% for error in form.password2.errors %}
+<script>
+    alertify.set('notifier', 'position', 'top-right');
+    alertify.error("{{error}}");
+</script>
+{% endfor %}

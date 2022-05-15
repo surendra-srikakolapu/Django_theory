@@ -1,0 +1,800 @@
+ html,
+ body {
+     font-family: 'Lato', sans-serif;
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     overflow-x: hidden;
+ }
+
+
+ .section-crud {
+     background-color: #D9EEE1;
+ }
+
+ .section-crud .wave3 {
+     position: relative;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     overflow: hidden;
+     line-height: 0;
+     transform: rotate(180deg);
+     height: 100px;
+ }
+
+ .section-crud .wave3 svg {
+     position: relative;
+     display: block;
+     width: calc(141% + 1.3px);
+     height: 99px;
+     transform: rotateY(180deg);
+ }
+
+ .section-crud .wave3 .shape-fill {
+     fill: #060608;
+ }
+
+ .section-crud .wave3 svg {
+     width: calc(141% + 1.3px);
+     height: 73px;
+ }
+
+
+
+
+
+
+ .section-auth {
+     background-color: #060608;
+     background-image:
+         radial-gradient(at 47% 33%, hsl(49.09, 14.000000000000002%, 15%) 0, transparent 59%),
+         radial-gradient(at 82% 65%, hsl(221.05, 5%, 51%) 0, transparent 55%);
+ }
+
+ .section-auth .wave4 {
+     position: relative;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     overflow: hidden;
+     line-height: 0;
+     transform: rotate(180deg);
+     height: 100px;
+ }
+
+ .section-auth .wave4 svg {
+     position: relative;
+     display: block;
+     width: calc(141% + 1.3px);
+     height: 99px;
+     transform: rotateY(180deg);
+ }
+
+ .section-auth .wave4 .shape-fill {
+     fill: #D9EEE1;
+ }
+
+ .section-auth .wave4 svg {
+     width: calc(141% + 1.3px);
+     height: 73px;
+ }
+
+
+
+ .section-dataformat {
+     background-color: #D9EEE1;
+ }
+
+ .section-dataformat .wave5 {
+     position: relative;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     overflow: hidden;
+     line-height: 0;
+     transform: rotate(180deg);
+     height: 100px;
+ }
+
+ .section-dataformat .wave5 svg {
+     position: relative;
+     display: block;
+     width: calc(141% + 1.3px);
+     height: 99px;
+     transform: rotateY(180deg);
+ }
+
+ .section-dataformat .wave5 .shape-fill {
+     fill: #060608;
+ }
+
+ .section-dataformat .wave5 svg {
+     width: calc(141% + 1.3px);
+     height: 73px;
+ }
+
+
+ .section-charts {
+     background-color: black;
+ }
+
+ .section-charts .wave6 {
+     position: relative;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     overflow: hidden;
+     line-height: 0;
+     transform: rotate(180deg);
+     height: 100px;
+ }
+
+ .section-charts .wave6 svg {
+     position: relative;
+     display: block;
+     width: calc(141% + 1.3px);
+     height: 99px;
+     transform: rotateY(180deg);
+ }
+
+ .section-charts .wave6 .shape-fill {
+     fill: white;
+ }
+
+ .section-charts .wave6 svg {
+     width: calc(141% + 1.3px);
+     height: 73px;
+ }
+
+
+
+
+
+ .section-payment {
+     background-color: white;
+ }
+
+ .section-payment .wave7 {
+     position: relative;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     overflow: hidden;
+     line-height: 0;
+     transform: rotate(180deg);
+     height: 100px;
+ }
+
+ .section-payment .wave7 svg {
+     position: relative;
+     display: block;
+     width: calc(141% + 1.3px);
+     height: 99px;
+     transform: rotateY(180deg);
+ }
+
+ .section-payment .wave7 .shape-fill {
+     fill: black;
+ }
+
+ .section-payment .wave7 svg {
+     width: calc(141% + 1.3px);
+     height: 73px;
+ }
+
+
+
+
+ .section-others {
+     background-color: #6c80ab;
+     background-image:
+         radial-gradient(at 47% 33%, hsl(354.29, 100%, 75%) 0, transparent 59%),
+         radial-gradient(at 82% 65%, hsl(216.60, 97%, 59%) 0, transparent 55%);
+ }
+
+
+
+
+
+
+ @media (min-width: 768px) {
+
+
+
+
+     .section-crud .heading-3 {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         color: white;
+         font-size: 90px;
+         font-weight: 700;
+         text-shadow: 5px 5px 3px rgb(162, 148, 148),
+             5px 5px 3px rgb(0, 0, 0);
+         letter-spacing: 7px;
+     }
+
+     .section-crud .crud-row {
+         margin-left: 4%;
+     }
+
+     .section-crud .crud-h1 {
+         margin-left: 6%;
+         font-size: 40px;
+         font-weight: 700;
+         color: "black";
+         text-decoration: underline;
+         letter-spacing: 3px;
+     }
+
+     .section-crud ul {
+         padding: 30px;
+         list-style: none;
+     }
+
+     .section-crud ul li {
+         padding: 10px;
+         font-size: 20px;
+         font-weight: 700;
+     }
+
+     .section-crud ul li span {
+
+         font-size: 30px;
+         margin-right: 10px;
+         font-weight: 800;
+     }
+
+
+
+
+
+
+
+     .section-auth .auth-row {
+         margin-left: 4%;
+     }
+
+     .section-auth .auth-h1 {
+         margin-left: 6%;
+         font-size: 40px;
+         font-weight: 700;
+         color: white;
+         text-decoration: underline;
+         letter-spacing: 3px;
+     }
+
+     .section-auth .auth-heading {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         color: white;
+         font-size: 70px;
+         font-weight: 700;
+         text-shadow: 2px 2px 1px rgb(162, 148, 148),
+             2px 2px 1px rgb(90, 71, 71);
+         letter-spacing: 7px;
+     }
+
+     .section-auth .auth-h1 {
+         margin-top: 12%;
+         font-size: 25px;
+         font-weight: 700;
+         color: white;
+         text-decoration: underline;
+         letter-spacing: 2px;
+     }
+
+     .section-auth ul {
+         padding: 30px;
+         list-style: none;
+     }
+
+     .section-auth ul li {
+         padding: 10px;
+         font-size: 20px;
+         font-weight: 700;
+         color: #D9EEE1;
+     }
+
+     .section-auth ul li span {
+         font-size: 30px;
+         margin-right: 10px;
+         font-weight: 800;
+     }
+
+     .razor-image {
+         width: 60%;
+         height: 90%;
+         margin-left: 20px;
+         border-radius: 20px;
+     }
+
+     .btn-payment:hover {
+         color: white;
+         background-color: orange;
+     }
+
+     .btn-payment {
+         margin-top: 50px;
+         color: orange;
+         background-color: white;
+         font-size: 40px;
+         border-radius: 20px;
+     }
+
+
+
+
+
+     .mobile {
+         position: relative;
+
+         margin-bottom: 40%;
+         width: 245px;
+         height: 450px;
+         background: white;
+         border-radius: 20px;
+     }
+
+     .screen {
+         position: absolute;
+
+         top: 20px;
+         bottom: 30px;
+         left: 6px;
+         right: 6px;
+         background-color: black;
+         border-radius: 5px;
+         overflow: hidden;
+
+     }
+
+
+
+
+
+
+
+
+
+
+     .section-dataformat .heading-3 {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         color: white;
+         font-size: 90px;
+         font-weight: 700;
+         text-shadow: 5px 5px 3px rgb(162, 148, 148),
+             5px 5px 3px rgb(0, 0, 0);
+         letter-spacing: 7px;
+     }
+
+     .section-dataformat .dataformat-row {
+         margin-left: 4%;
+     }
+
+     .section-dataformat .dataformat-h1 {
+         margin-left: 6%;
+         font-size: 40px;
+         font-weight: 700;
+         color: "black";
+         text-decoration: underline;
+         letter-spacing: 3px;
+     }
+
+     .section-dataformat ul {
+         padding: 30px;
+         list-style: none;
+     }
+
+     .section-dataformat ul li {
+         padding: 10px;
+         font-size: 20px;
+         font-weight: 700;
+     }
+
+     .section-dataformat ul li span {
+
+         font-size: 30px;
+         margin-right: 10px;
+         font-weight: 800;
+     }
+
+
+
+
+
+
+     .section-charts .heading-3 {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         color: white;
+         font-size: 90px;
+         font-weight: 700;
+         text-shadow: 5px 5px 3px rgb(162, 148, 148),
+             5px 5px 3px rgb(0, 0, 0);
+         letter-spacing: 7px;
+     }
+
+     .chart-p {
+         color: white;
+         font-size: 35px;
+         width: 60%;
+         margin-left: 20%;
+         font-weight: 500;
+         font-family: URW Chancery L,
+             cursive;
+
+
+     }
+
+
+
+
+
+
+
+
+
+
+
+     .section-payment .heading-3 {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         color: white;
+         font-size: 90px;
+         font-weight: 700;
+         text-shadow: 5px 5px 3px rgb(162, 148, 148),
+             5px 5px 3px rgb(0, 0, 0);
+         letter-spacing: 7px;
+     }
+
+     .mobile {
+         position: relative;
+         height: 450px;
+         width: 255px;
+         background: rgb(0, 0, 0);
+         border-radius: 20px;
+         margin-left: 70%;
+         margin-bottom: 20%;
+     }
+
+
+     .screen {
+         position: absolute;
+         top: 20px;
+         bottom: 30px;
+         left: 10px;
+         right: 10px;
+         background-color: rgb(223, 223, 223);
+         border-radius: 5px;
+         overflow: hidden;
+     }
+
+     .mobile-left {
+         margin-top: 1%;
+         width: 50%;
+         margin-left: 20%;
+         font-size: 60px;
+         font-weight: 700;
+         color: rgb(97, 15, 15);
+         font-family: URW Chancery L,
+             cursive;
+     }
+
+     .checkout-btn {
+         background-color: rgb(97, 15, 15);
+         color: white;
+         font-size: 30px;
+         margin-right: 10%;
+         font-family: URW Chancery L,
+             cursive;
+     }
+
+     .checkout-btn:hover {
+         background-color: rgb(97, 15, 15);
+         color: white;
+         font-size: 30px;
+         margin-right: 10%;
+     }
+
+
+
+
+
+
+
+     .section-others .heading-3 {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         color: white;
+         font-size: 90px;
+         font-weight: 700;
+         text-shadow: 5px 5px 3px rgb(162, 148, 148),
+             5px 5px 3px rgb(0, 0, 0);
+         letter-spacing: 7px;
+     }
+
+     .section-others .card {
+         width: 350px;
+         margin-left: 5%;
+         color: black;
+         background-color: white;
+         border-radius: 20px;
+         margin-bottom: 70px;
+     }
+ }
+
+
+
+
+
+
+
+ @media (max-width: 767px) {
+
+     .section-crud .heading-3 {
+         margin-top: 13%;
+         font-size: 40px;
+         font-weight: 700;
+         text-shadow: 2px 2px 1px rgb(162, 148, 148),
+             2px 2px 1px rgb(0, 0, 0);
+         letter-spacing: 7px;
+     }
+
+     .section-crud .crud-row {
+         margin-left: 3%;
+     }
+
+     .section-crud .crud-h1 {
+         margin-top: 12%;
+         font-size: 25px;
+         font-weight: 700;
+         color: "black";
+         text-decoration: underline;
+         letter-spacing: 2px;
+     }
+
+     .section-crud ul {
+         padding: 10px;
+         list-style: none;
+     }
+
+     .section-crud ul li {
+         padding: 5px;
+         font-size: 20px;
+         font-weight: 700;
+     }
+
+     .section-crud ul li span {
+
+         font-size: 30px;
+         margin-right: 10px;
+         font-weight: 800;
+     }
+
+
+
+
+
+     .section-auth .auth-heading {
+         color: white;
+         margin-top: 13%;
+         font-size: 30px;
+         font-weight: 700;
+         text-shadow: 2px 2px 1px rgb(162, 148, 148),
+             2px 2px 1px rgb(0, 0, 0);
+         letter-spacing: 7px;
+     }
+
+     .section-auth .auth-row {
+         margin-left: 3%;
+     }
+
+     .section-auth .auth-h1 {
+         margin-top: 12%;
+         font-size: 25px;
+         font-weight: 700;
+         color: white;
+         text-decoration: underline;
+         letter-spacing: 2px;
+     }
+
+
+
+
+
+     .section-auth ul {
+         padding: 10px;
+         list-style: none;
+     }
+
+     .section-auth ul li {
+         padding: 5px;
+         font-size: 20px;
+         font-weight: 700;
+         color: #D9EEE1;
+     }
+
+     .section-auth ul li span {
+
+         font-size: 30px;
+         margin-right: 10px;
+         font-weight: 800;
+     }
+
+
+
+
+
+
+
+
+     .section-dataformat .heading-3 {
+         margin-top: 13%;
+         font-size: 35px;
+         font-weight: 700;
+         text-shadow: 2px 2px 1px rgb(162, 148, 148),
+             2px 2px 1px rgb(0, 0, 0);
+         letter-spacing: 7px;
+         color: azure;
+     }
+
+     .section-dataformat .dataformat-row {
+         margin-left: 3%;
+     }
+
+     .section-dataformat .dataformat-h1 {
+         margin-top: 12%;
+         font-size: 25px;
+         font-weight: 700;
+         color: "black";
+         text-decoration: underline;
+         letter-spacing: 2px;
+     }
+
+     .section-dataformat ul {
+         padding: 10px;
+         list-style: none;
+     }
+
+     .section-dataformat ul li {
+         padding: 5px;
+         font-size: 20px;
+         font-weight: 700;
+     }
+
+     .section-dataformat ul li span {
+
+         font-size: 30px;
+         margin-right: 10px;
+         font-weight: 800;
+     }
+
+
+
+
+
+     .section-charts .heading-3 {
+         margin-top: 13%;
+         font-size: 35px;
+         font-weight: 700;
+         text-shadow: 2px 2px 1px rgb(162, 148, 148),
+             2px 2px 1px rgb(0, 0, 0);
+         letter-spacing: 7px;
+         color: azure;
+     }
+
+     .chart-p {
+         color: white;
+         font-size: 25px;
+         width: 80%;
+         margin-left: 10%;
+         font-weight: 500;
+         font-family: URW Chancery L,
+             cursive;
+         margin-bottom: 10%;
+
+
+     }
+
+
+
+
+
+
+
+
+     .section-payment .heading-3 {
+         margin-top: 13%;
+         font-size: 40px;
+         font-weight: 700;
+         text-shadow: 2px 2px 1px rgb(162, 148, 148),
+             2px 2px 1px rgb(0, 0, 0);
+         letter-spacing: 3px;
+         color: azure;
+     }
+
+
+
+     .mobile {
+         position: relative;
+         height: 450px;
+         width: 255px;
+         background: rgb(0, 0, 0);
+         border-radius: 20px;
+         left: 18%;
+         margin-top: 10%;
+     }
+
+
+     .screen {
+         position: absolute;
+         top: 20px;
+         bottom: 30px;
+         left: 10px;
+         right: 10px;
+         background-color: rgb(223, 223, 223);
+         border-radius: 5px;
+         overflow: hidden;
+     }
+
+
+     .mobile-left {
+         margin-top: 1%;
+         font-size: 45px;
+         font-weight: 700;
+         color: rgb(97, 15, 15);
+         width: 90%;
+         font-family: URW Chancery L,
+             cursive;
+         margin-left: 6%;
+     }
+
+     .checkout-btn {
+         background-color: rgb(97, 15, 15);
+         color: white;
+         font-size: 30px;
+         margin-bottom: 60px;
+
+         font-family: URW Chancery L,
+             cursive;
+     }
+
+     .checkout-btn:hover {
+         background-color: rgb(97, 15, 15);
+         color: white;
+         font-size: 30px;
+         margin-right: 10%;
+     }
+
+
+
+
+
+
+     .section-others .heading-3 {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         color: white;
+         font-size: 90px;
+         font-weight: 700;
+         text-shadow: 5px 5px 3px rgb(162, 148, 148),
+             5px 5px 3px rgb(0, 0, 0);
+         letter-spacing: 7px;
+     }
+
+     .section-others .card {
+         position: relative;
+         width: 350px;
+         margin-right: 35px;
+         color: black;
+         background-color: white;
+         border-radius: 20px;
+         margin-bottom: 40px;
+     }
+
+
+
+ }

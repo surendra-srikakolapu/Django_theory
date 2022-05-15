@@ -1,0 +1,43 @@
+{% load crispy_forms_tags %}
+
+<div class="row">
+    <div class="col-12">
+        <form method="POST">
+
+            <div class="table-responsive">
+                <table class="table table-bordered ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Employee Name</th>
+                            <th scope="col">Date of Birth</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Company</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th class="col">{{uform.name}}</th>
+                            <td class="col">{{uform.dob}}</td>
+                            <td class="col">{{uform.phone}}</td>
+                            <td class="col">{{uform.company}}</td>
+                            <td class="col">{{uform.address}}</td>
+                            <td class="col">
+                                <button class="btn btn-primary" type="submit" value="submit">Update</button>
+                                <a class="btn btn-danger" href="{% url 'emp-table' %}">Cancel</a>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            {% csrf_token %}
+        </form>
+
+    </div>
+
+</div>

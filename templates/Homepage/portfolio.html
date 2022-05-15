@@ -1,0 +1,555 @@
+{% extends "Homepage/base.html" %}
+{% load static %}
+{% block content %}
+
+<body class="bg-dark">
+
+    <div class="">
+        
+        <section class="section-crud   ">
+            <div class="row justify-content-center text-center">
+                <div class="col-4 p-4">
+                    <span style="font-size: 30px;
+                                        color: black;
+                                        background-color: transparent;
+                                        cursor: pointer;
+                                        " onclick="openNav()">&#9776;
+                        Menu</span>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12 text-center">
+                    <label class="heading-3 text-dark wow bounceInDown data-wow-delay=" 5s"">Django CRUD</label>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center crud-row">
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 com-xs-12 wow bounceInRight">
+
+                    <h1 class="crud-h1 ">OPERATIONS</h1>
+                    <ul>
+
+                        <li><span>&#8618;</span>CREATE</li>
+                        <li><span>&#8618;</span>READ</li>
+                        <li><span>&#8618;</span>UPDATE</li>
+                        <li><span>&#8618;</span>DELETE</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 com-xs-10 wow bounceInUp">
+
+                    <h1 class="crud-h1">HTMX</h1>
+                    <ul>
+                        <li><span>&#8618;</span>Single page (No reload)</li>
+                        <li><span>&#8618;</span>No (JavaScript or Ajax) </li>
+                        <li><span>&#8618;</span>9 kb in Size (library)</li>
+                        <li><span>&#8618;</span>Excellent support for Django</li>
+                    </ul>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 com-xs-10 wow bounceInLeft ">
+
+                    <h1 class="crud-h1">OPERAT</h1>
+                    <ul>
+                        <li><span>&#8618;</span>Create</li>
+                        <li><span>&#8618;</span>READ (or) RETRIVE</li>
+                        <li><span>&#8618;</span>UPDATE</li>
+                        <li><span>&#8618;</span>DELETE</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="wave3">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+
+        </section>
+
+
+        <section class="section-auth  justify-content-center">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <label class="auth-heading">AUTHENTICATION</label>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center auth-row">
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 com-xs-12 wow bounceInRight">
+
+                    <h1 class="auth-h1 ">Basic Auhentication</h1>
+                    <ul>
+                        <li><span>&#8618;</span>Register</li>
+                        <li><span>&#8618;</span>Login</li>
+                        <li><span>&#8618;</span>Logout</li>
+                        <li><span>&#8618;</span><a href="">Checkout</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 com-xs-10 wow bounceInUp">
+
+                    <h1 class="auth-h1">DRF Authentication</h1>
+                    <ul>
+                        <li><span>&#8618;</span>Basic Authentication</li>
+                        <li><span>&#8618;</span>Token Authentication</li>
+                        <li><span>&#8618;</span>Session Authentication</li>
+                        <li><span>&#8618;</span>Simple JWT(Third party)</li>
+
+                    </ul>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 com-xs-10 wow bounceInLeft ">
+
+                    <h1 class="auth-h1">Others</h1>
+                    <ul>
+                        <li><span>&#8618;</span>OAuth (Social Authen)</li>
+                        <li><span>&#8618;</span>Authorizartion</li>
+                        <li><span>&#8618;</span>Permission Classes</li>
+                        <li><span>&#8618;</span>Validations</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="wave4">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill">
+                    </path>
+                </svg>
+            </div>
+
+        </section>
+
+        <section class="section-dataformat   ">
+            <div class="row text-center">
+                <div class="col-12 text-center">
+                    <label class="heading-3 text-dark wow bounceInDown data-wow-delay=" 5s"">Data Formatting</label>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center dataformat-row">
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 com-xs-12 wow bounceInRight">
+
+                    <h1 class="dataformat-h1 ">Table Content</h1>
+                    <ul>
+
+                        <li><span>&#8618;</span>Table View</li>
+                        <li><span>&#8618;</span>Employee Form</li>
+                        <li><span>&#8618;</span>Erase data</li>
+
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 com-xs-10 wow bounceInUp">
+
+                    <h1 class="dataformat-h1">Data Formats</h1>
+                    <ul>
+                        <li><span>&#8618;</span>EXCEL</li>
+                        <li><span>&#8618;</span>CSV</li>
+                        <li><span>&#8618;</span>PDF</li>
+
+                    </ul>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 com-xs-10 wow bounceInLeft ">
+
+                    <h1 class="dataformat-h1">Topics Covered</h1>
+                    <ul>
+                        <li><span>&#8618;</span>Pagination</li>
+                        <li><span>&#8618;</span>Searching</li>
+                        <li><span>&#8618;</span>Import/Export Data</li>
+                        <li><span>&#8618;</span>Browsable Api</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="wave5">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+
+        </section>
+
+
+
+        <section class="section-charts">
+            <div class="row text-center">
+                <div class="col-12 text-center">
+                    <label class="heading-3 wow bounceInDown data-wow-delay=" 5s"">Data Visualization</label>
+                </div>
+
+            </div>
+
+
+            <div class="row justify-content-center mt-3">
+                <div class=" text-center p-2 col-xl-6 col-lg-6 col-md-6 col-sm-10 col-xs-10">
+
+                    <div>
+                        <div id="chart2">
+
+                        </div>
+                        <p class="chart-p">
+                            Real time data visualization with Django and Apex charts .
+                        </p>
+
+
+
+                    </div>
+                    <script>
+                        var options = {
+                            chart: {
+                                height: 400,
+                                type: "radialBar",
+                            },
+
+                            series: ["{{users_count}}"],
+                            colors: ["#20E647"],
+                            plotOptions: {
+                                radialBar: {
+                                    hollow: {
+                                        margin: 0,
+                                        size: "70%",
+                                        background: "#293450"
+                                    },
+                                    track: {
+                                        dropShadow: {
+                                            enabled: true,
+                                            top: 2,
+                                            left: 0,
+                                            blur: 4,
+                                            opacity: 0.15
+                                        }
+                                    },
+                                    dataLabels: {
+                                        name: {
+                                            offsetY: -10,
+                                            color: "#fff",
+                                            fontSize: "13px"
+                                        },
+                                        value: {
+                                            color: "#fff",
+                                            fontSize: "30px",
+                                            show: true
+                                        }
+                                    }
+                                }
+                            },
+                            fill: {
+                                type: "gradient",
+                                gradient: {
+                                    shade: "dark",
+                                    type: "vertical",
+                                    gradientToColors: ["#87D4F9"],
+                                    stops: [0, 100]
+                                }
+                            },
+                            stroke: {
+                                lineCap: "round"
+                            },
+                            labels: ["Total testers"]
+                        };
+
+                        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+
+                        chart.render();
+
+
+                    </script>
+
+                </div>
+                <div class=" text-black  col-xl-6 col-lg-6 col-md-6 col-sm-10 col-xs-10">
+                    <div class="card">
+                        <div width="50" id="chart">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <strong>Employee Table</strong>
+                                <span class="badge bg-primary rounded-pill"><a style="color:white;text-decoration:none;"
+                                        href="{% url 'emp-table' %}">Manupulate</a></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <strong>Student data</strong>
+                                <span class="badge bg-primary rounded-pill"><a style="color:white;text-decoration:none;"
+                                        href="{% url 'classes' %}">Manupulate</a></span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <strong>Dummy payment test</strong>
+                                <span class="badge bg-primary rounded-pill"><a style="color:white;text-decoration:none;"
+                                        href="{% url 'razorpay' %}">Manupulate</a></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <script>
+                        var options = {
+                            chart: {
+                                type: 'bar'
+                            },
+                            series: [{
+                                name: 'Count',
+                                data: ["{{emps_count}}", "{{studs_count}}", "{{payment_count}}"]
+                            }],
+                            xaxis: {
+                                categories: ["Employess", "Total Students", "Tested payments"]
+                            },
+                            fill: {
+                                type: 'gradient',
+                                gradient: {
+                                    shade: 'dark',
+                                    type: "vertical",
+                                    shadeIntensity: 0.5,
+                                    gradientToColors: undefined,
+                                    inverseColors: true,
+                                    opacityFrom: 1,
+                                    opacityTo: 1,
+                                    stops: [0, 50, 100],
+                                    colorStops: []
+                                }
+                            }
+                        }
+
+                        var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+                        chart.render();
+                    </script>
+                </div>
+
+            </div>
+
+            <div class="wave6">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+
+        </section>
+
+
+        <section class="section-payment   ">
+            <div class="row text-center">
+                <div class="col-12 text-center">
+                    <label class="heading-3 text-dark ">Payment Gateway</label>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="mobile">
+
+
+                        <div class="screen">
+
+                            <img class="img-fluid" src="{% static 'images/razor-test.gif' %}" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-center">
+                    <span><i class="fa fa-credit-card-front"></i></span>
+                    <p class="mobile-left text-center">Make a test payment with Razor-pay </p><br>
+                    <a class="btn checkout-btn mt-4" href="{% url 'razorpay' %}">Checkout <span>&#8618;</span></a>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <section class="section-others   ">
+            <div class="row text-center">
+                <div class="col-12 text-center">
+                    <label class="heading-3 text-dark ">Others</label>
+                </div>
+
+            </div>
+
+            <div class="row m-3 justify-content-center">
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h1><strong>Django Signals</strong></h1>
+                        </div>
+
+                        <div class="card-body">
+                            <ul <li><span>&#8618;</span>CREATE</li>
+                                <li><span>&#8618;</span>READ</li>
+                                <li><span>&#8618;</span>UPDATE</li>
+                                <li><span>&#8618;</span>DELETE</li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h1><strong>Django Signals</strong></h1>
+                        </div>
+
+                        <div class="card-body">
+                            <ul <li><span>&#8618;</span>CREATE</li>
+                                <li><span>&#8618;</span>READ</li>
+                                <li><span>&#8618;</span>UPDATE</li>
+                                <li><span>&#8618;</span>DELETE</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h1><strong>Django Channels</strong></h1>
+                        </div>
+
+                        <div class="card-body">
+                            <ul <li><span>&#8618;</span>CREATE</li>
+                                <li><span>&#8618;</span>READ</li>
+                                <li><span>&#8618;</span>UPDATE</li>
+                                <li><span>&#8618;</span>DELETE</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h1><strong>Django Signals</strong></h1>
+                        </div>
+
+                        <div class="card-body">
+                            <ul <li><span>&#8618;</span>CREATE</li>
+                                <li><span>&#8618;</span>READ</li>
+                                <li><span>&#8618;</span>UPDATE</li>
+                                <li><span>&#8618;</span>DELETE</li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h1><strong>Django Signals</strong></h1>
+                        </div>
+
+                        <div class="card-body">
+                            <ul <li><span>&#8618;</span>CREATE</li>
+                                <li><span>&#8618;</span>READ</li>
+                                <li><span>&#8618;</span>UPDATE</li>
+                                <li><span>&#8618;</span>DELETE</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h1><strong>Django Channels</strong></h1>
+                        </div>
+
+                        <div class="card-body">
+                            <ul <li><span>&#8618;</span>CREATE</li>
+                                <li><span>&#8618;</span>READ</li>
+                                <li><span>&#8618;</span>UPDATE</li>
+                                <li><span>&#8618;</span>DELETE</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+    </div>
+
+
+<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+
+    </section>
+
+
+
+
+
+    </div>
+
+    <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+        )
+        wow.init();
+    </script>
+   
+
+
+
+</body>
+
+{% endblock content %}

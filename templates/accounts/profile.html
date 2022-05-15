@@ -1,0 +1,153 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+
+
+<body>
+
+    <div class="container-fluid">
+        {% if user.is_authenticated %}
+
+
+
+        <div class="row  justify-content-center">
+            <div style="max-width: 940px; background-color: #384744;
+            background-image:
+                radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%),
+                radial-gradient(at 82% 65%, hsl(354.78, 46%, 19%) 0, transparent 55%);"
+                class="card shadow-lg rounded  mb-3">
+                <div class="row">
+                    <div class="col-4 p-4">
+                        <span class="menu-btn" onclick="openNav()">&#9776;
+                        </span>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md-5 p-4 ">
+                        <img style="border-radius: 5%;margin-top: 5%;" class="card-img-top img-thumbnail"
+                            src="{{user.profile.image.url}}" alt="Card image">
+                    </div>
+                    <div class="col-md-7">
+                        <h1 style="letter-spacing:10px;font-weight:700;" class="m-4 text-white text-center">PROFILE</h1>
+                        <div class="card-body">
+
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex  text-center">
+                                    <h3 class="text-center"><strong>{{user.first_name}} {{user.last_name}}</strong>
+                                    </h3>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>First Name</strong>
+                                    <span class="badge bg-primary rounded-pill">{{user.first_name}}</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Last Name</strong>
+                                    <span class="badge bg-primary rounded-pill">{{user.last_name}}</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Username</strong>
+                                    <span class="badge bg-primary rounded-pill">{{user.username}}</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Email</strong>
+                                    <span class="badge bg-primary rounded-pill">{{user.email}}</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Date of Birth</strong>
+                                    <span class="badge bg-primary rounded-pill">{{user.profile.dob}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card-body mb-3 text-center">
+                            <a href="{% url 'profile_update' %}" style="border-radius: 20%;"
+                                class=" card-link border border-2 border-success btn btn-outline-success text-white text-center">Update
+                                Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        {% else %}
+
+        <div class="row justify-content-center">
+            <div style="max-width: 940px; background-color: #384744;
+            background-image:
+                radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%),
+                radial-gradient(at 82% 65%, hsl(354.78, 46%, 19%) 0, transparent 55%);"
+                class="card shadow-lg rounded p-4 mb-3">
+                <div class="row">
+                    <div class="col-4 p-4">
+                        <span class="menu-btn" onclick="openNav()">&#9776;
+                        </span>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-md-5  p-5 ">
+                        <img style="border-radius: 5%;" class="card-img-top img-thumbnail"
+                            src="{% static 'images/profile.jpg' %}" alt="Card image">
+
+
+                    </div>
+                    <div class="col-md-7">
+                        <h1 style="letter-spacing:10px;font-weight:700;" class="m-4 text-white text-center">PROFILE</h1>
+                        <div class="card-body">
+
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex  text-center">
+                                    <h3 class="text-center"><strong>SRIKAKOLAPU SURENDRA</strong></h3>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>First Name</strong>
+                                    <span class="badge bg-primary rounded-pill">SRIKAKOLAPU</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Last Name</strong>
+                                    <span class="badge bg-primary rounded-pill">SURENDRA</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Email</strong>
+                                    <span class="badge bg-primary rounded-pill">surendra.srikakolapu@gmail.com</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Username</strong>
+                                    <span class="badge bg-primary rounded-pill">Surendra</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <strong>Date of Birth</strong>
+                                    <span class="badge bg-primary rounded-pill">April 2 , 2012</span>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card-body mb-3 text-center">
+                            <a href="{% url 'register' %}"
+                                class="p-3 card-link btn btn-xl btn-primary text-center">Register
+                                to
+                                get same of your's</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        {% endif %}
+    </div>
+
+    </div>
+
+
+
+</body>
+{% endblock content %}

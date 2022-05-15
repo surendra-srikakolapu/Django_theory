@@ -1,0 +1,39 @@
+{% extends "Homepage/base.html" %}
+
+{% block content %}
+
+<div  class="container-fluid index-body content">
+    <div class="md:flex col-12 md:items-center md:justify-between">
+        <div class="flex-1 min-w-0">
+            <h2 class="text-2xl font-bold leading-7 text-light sm:text-3xl sm:truncate">
+                Create Students for {{ author.name }}
+            </h2>
+        </div>
+        <div class="mt-4 flex md:mt-0 md:ml-4">
+            <button type="button" class="btn-lg btn-primary" hx-get="{% url 'create-book-form' %}"
+                hx-target="#bookforms" hx-swap="beforeend"
+                class="ml-5 inline-flex items-center px-1 py-1 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Add form
+            </button>
+        </div>
+    </div>
+
+
+    <div id="bookforms" class=""></div>
+
+    <div class="">
+
+        {% for book in books %}
+
+        {% include "partials/book_detail.html" %}
+
+        {% endfor %}
+
+        </table>
+
+    </div>
+</div>
+
+
+
+{% endblock %}

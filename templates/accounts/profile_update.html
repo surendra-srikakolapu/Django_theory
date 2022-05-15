@@ -1,0 +1,109 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+
+
+<body class="container-fluid">
+    {% if user.is_authenticated %}
+    <div class="row justify-content-center">
+        <div class="card profile-card shadow-lg col-12 rounded ">
+            
+            <div class="row justify-content-center g-0">
+                <div class="col-md-10 p-2 ">
+
+                    <div class="row justify-content-right">
+                        <div class="col-1 close-icon">
+                            <a href="/accounts/profile"><i class="fa  fa-close"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="m-4" action="" method="post" enctype="multipart/form-data">
+
+                        <div class="row  mb-5 justify-content-center">
+                            <label
+                                style="color:white; font-family: Tahoma; font-size: 30px; font-style: oblique; font-variant: normal; font-weight: bold; letter-spacing: 15px;text-align: center;">UPDATE
+                                PROFILE</label>
+                        </div>
+
+
+
+                        <div class="row formrow-inputs justify-content-center mb-4">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-xs-10 mb-5">
+
+                                {{u_form.first_name}}
+
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-xs-10 mb-5">
+
+                                {{u_form.last_name}}
+
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-xs-10 mb-5">
+                                {{u_form.username}}
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-xs-10 mb-5">
+
+
+                                {{u_form.email}}
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-xs-10 mb-5">
+
+                                {{p_form.dob}}
+
+                            </div>
+                            <div class="col-xl-6 text-light col-lg-6 col-md-6 col-sm-10 col-xs-10 mb-2">
+
+                                <input type="file" name="image" accept="image/*" id="id_image">
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row pt-4 justify-content-center">
+                            <input class="col-11 btn btn-danger" type="submit" value="Submit">
+                        </div>
+
+                        {% csrf_token %}
+
+
+
+                        {{form.errors}}
+
+                    </form>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    {% else %}
+
+    <div class="col-12 text-light text-center">
+        <h1>Register to get profile</h1>
+    </div>
+
+    {% endif %}
+
+
+
+
+
+</body>
+
+
+
+{% endblock content %}

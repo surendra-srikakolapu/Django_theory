@@ -1,0 +1,92 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<body class="container-fluid">
+
+
+    <div class="row justify-content-center">
+        <div class="card login-card shadow-lg col-12 rounded ">
+
+            <div class="row">
+                <div class="col-4 p-4">
+                    <span class="menu-btn" onclick="openNav()">&#9776;
+                    </span>
+                </div>
+            </div>
+
+            <div class="row justify-content-center g-0">
+                <div class="col-md-10 p-2 ">
+
+                    <form class="m-4" method="post">
+
+                        <div class="row  mb-5 justify-content-center">
+                            <label
+                                style="color:white; font-family: Tahoma; font-size: 30px; font-style: oblique; font-variant: normal; font-weight: bold; letter-spacing: 15px;text-align: center;">LOGIN</label>
+                        </div>
+
+
+
+                        <div class="row formrow-inputs justify-content-center mb-4">
+
+
+                            <div class="col-12 mb-5">
+
+                                <input type="text" name="username" placeholder=" Enter Username" required>
+
+                            </div>
+                            <div class="col-12 mb-2">
+
+                                <input type="password" name="password" placeholder="Enter Password" required>
+
+                            </div>
+                        </div>
+
+
+                        <div class="row pt-4 justify-content-center">
+                            <input class="col-11 btn btn-danger" type="submit" value="Submit">
+                        </div>
+
+                        <div class="row text-center justify-content-center mt-4">
+
+                            <h4 class="text-white mb-4">or</h4><br>
+                            <a class="btn btn-primary col-11" href="{% url 'register' %}">Register</a>
+                            
+                        </div>
+                        
+
+
+
+
+
+                        {% csrf_token %}
+
+
+                    </form>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        {% if form.non_field_errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            {{form.non_field_errors}}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+{% endblock content %}
