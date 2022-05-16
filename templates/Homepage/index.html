@@ -53,32 +53,29 @@
 
     <section id="home" class="intro-section">
         <div class="container">
-            <div class="row align-items-center text-white">
+            <div class="row">
 
 
+<div class="col-xl-5 col-lg-5  col-sm-12 col-xs-12 profile-left">
+    <img src="image.png" class="img-fluid" alt="">
+</div>
+<div class="col-xl-7 col-lg-7 col-sm-12 col-xs-12 text-center profile-right">
 
-                <div style="padding-bottom: 100px;" class="col-md-6 intros text-start">
-                    <h1 class="display-2">
-                        <span class="display-2--intro">Hey!, I'm Surendra</span>
-                        <span class="display-2--description lh-base">
-                            Currently looking for a full-stack python/django position .
-                        </span><br>
+    <h1 class="name">I'm Surendra</h1><br>
+    <p class="para">This is my portfolio website to showcase my all works related to <strong>PYTHON/DJANGO</strong> and
+        frontend . </p>
 
-                    </h1>
-                    {% for file in files %}
-
-                    <a href="{{file.file_upload.url}}" class="btn " download="{{file.file_upload.url}}">
-                        <button type="button" class="rounded-pill btn-rounded">Download CV
-                        </button></a>
-
-
-                    {% endfor %}
-                </div>
-
-                <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6  intros text-end">
-
-                </div>
-
+    <div class="col-12 text-center">
+        {% for file in files %}
+        
+        <a href="{{file.file_upload.url}}" class="btn " download="{{file.file_upload.url}}">
+            <button type="button">Download CV
+            </button></a>
+        
+        
+        {% endfor %}
+    </div>
+</div>
 
 
 
